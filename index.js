@@ -35,6 +35,7 @@ const start = async () => {
         await delay(2000);
         const colorInputElement = await driver.findElement(By.css('input[type="color"][name="my-colors"]'));
         await colorInputElement.click();
+
         await delay(2000);
         await colorInputElement.sendKeys("#20A722");
 
@@ -42,6 +43,7 @@ const start = async () => {
         await delay(2000);
         const dateInputElement = await driver.findElement(By.css('input[name="my-date"]'));
         await dateInputElement.click();
+
         await delay(2000);
         await dateInputElement.sendKeys("08/16/1970");
         await dateInputElement.click();
